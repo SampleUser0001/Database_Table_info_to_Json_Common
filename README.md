@@ -1,0 +1,2 @@
+# Database_Table_info_to_Json_Common
+DB情報をjsonに変換するツールの共通部品。
