@@ -8,6 +8,9 @@ import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import tool.db.json.common.model.AbstractModel;
 import tool.db.json.common.model.impl.ColumnModel;
 
+/**
+ * テーブル情報を扱う。
+ */
 @Data
 @JsonIgnoreProperties({
     "physicalName", 
@@ -16,10 +19,17 @@ import tool.db.json.common.model.impl.ColumnModel;
 })
 @JsonTypeInfo(use=JsonTypeInfo.Id.NONE)
 public class TableModel extends AbstractModel {
+    /** 物理名 */
     private String physicalName = "";
+    /** 論理名 */
     private String logicalName = "";
+    /** カラム情報のList */
     private List<ColumnModel> columnList = new ArrayList<ColumnModel>();
 
+    /**
+     * カラム情報のListに絡む情報を追加する。
+     * @param model カラム情報
+     */
     public void addColumnModel(ColumnModel model) {
         this.columnList.add(model);
     }
