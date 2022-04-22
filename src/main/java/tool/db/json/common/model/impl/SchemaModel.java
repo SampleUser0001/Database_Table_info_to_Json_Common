@@ -8,15 +8,15 @@ import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import tool.db.json.common.model.AbstractModel;
 import tool.db.json.common.model.impl.TableModel;
 
+/**
+ * スキーマ名/DB名を扱う。
+ */
 @Data
 @JsonIgnoreProperties({
     "schema", 
     "tables"
 })
 @JsonTypeInfo(use=JsonTypeInfo.Id.NONE)
-/**
- * スキーマ名/DB名を扱う。
- */
 public class SchemaModel extends AbstractModel {
     /** スキーマ/DB名 */
     private String name = "";

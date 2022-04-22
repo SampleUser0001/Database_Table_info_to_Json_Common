@@ -3,7 +3,7 @@ DB情報をjsonに変換するツールの共通部品。
 
 ## javadoc
 
-[apidocs](./target/site/apidocs/index.html)
+[apidocs](https://sampleuser0001.github.io/Database_Table_info_to_Json_Common/target/site/apidocs/index.html)
 
 ### javadoc生成
 
