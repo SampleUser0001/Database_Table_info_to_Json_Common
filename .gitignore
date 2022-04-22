@@ -1,4 +1,6 @@
-target/
+target/*
+!target/Database_Table_info_to_Json_Common*.jar
+
 pom.xml.tag
 pom.xml.releaseBackup
 pom.xml.versionsBackup
