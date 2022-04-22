@@ -18,6 +18,7 @@
     <jackson.version>2.13.2</jackson.version>
     <junit.version>4.12</junit.version>
     <hamcrest.version>2.2</hamcrest.version>
+    <javadoc.plugin.version>3.4.0</javadoc.plugin.version>
   </properties>  
 
   <dependencies>
@@ -49,4 +50,16 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
+  <reporting>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>${javadoc.plugin.version}</version>
+        <configuration>
+        </configuration>
+      </plugin>
+    </plugins>
+  </reporting>
 </project>
