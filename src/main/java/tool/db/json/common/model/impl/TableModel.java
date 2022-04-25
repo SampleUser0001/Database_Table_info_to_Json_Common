@@ -12,11 +12,6 @@ import tool.db.json.common.model.impl.ColumnModel;
  * テーブル情報を扱う。
  */
 @Data
-@JsonIgnoreProperties({
-    "physicalName", 
-    "logicalName",
-    "columns"
-})
 @JsonTypeInfo(use=JsonTypeInfo.Id.NONE)
 public class TableModel extends AbstractModel {
     /** 物理名 */

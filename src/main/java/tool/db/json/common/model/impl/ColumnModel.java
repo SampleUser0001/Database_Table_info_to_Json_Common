@@ -9,15 +9,6 @@ import tool.db.json.common.model.AbstractModel;
  * カラム情報を扱う。
  */
 @Data
-@JsonIgnoreProperties({
-    "physicalName", 
-    "logicalName",
-    "type",
-    "length",
-    "primaryKey",
-    "isNullable",
-    "quote"
-})
 @JsonTypeInfo(use=JsonTypeInfo.Id.NONE)
 public class ColumnModel extends AbstractModel {
     /** 物理名 */
@@ -31,7 +22,7 @@ public class ColumnModel extends AbstractModel {
     /** 主キーかどうか */
     private boolean primaryKey = false;
     /** nullを許可するか */
-    private boolean isNullable = true;
+    private boolean nullable = true;
     /** SQLで使用するとき、シングルクォーテーションが必要かどうか。 */
     private boolean quote = false;
 }
