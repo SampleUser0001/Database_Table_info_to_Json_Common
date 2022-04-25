@@ -1,5 +1,5 @@
 target/*
-!target/Database_Table_info_to_Json_Common*.jar
+!target/Database_Table_info_to_Json_Common*dependency*.jar
 !target/site/apidocs/*
 
 pom.xml.tag
