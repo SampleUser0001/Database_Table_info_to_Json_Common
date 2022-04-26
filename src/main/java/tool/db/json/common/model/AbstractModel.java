@@ -19,6 +19,6 @@ public abstract class AbstractModel {
             e.printStackTrace();
             return "{}";
         }
-
     }
+    
 }

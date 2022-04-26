@@ -4,7 +4,7 @@
   <groupId>tool.db.json.common</groupId>
   <artifactId>Database_Table_info_to_Json_Common</artifactId>
   <packaging>jar</packaging>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0.1-SNAPSHOT</version>
   <name>Database_Table_info_to_Json_Common</name>
   <url>http://maven.apache.org</url>
 
