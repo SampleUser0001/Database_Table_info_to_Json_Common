@@ -31,13 +31,14 @@ public class SchemaModelTest {
     private static boolean COLUMN_QUOTE = false;
 
     private SchemaModel schema;
+    private TableModel tabel;
     
     private List<ColumnModel> columnList = new ArrayList<ColumnModel>();
     
     @Before
     public void setup() {
         schema = new SchemaModel();
-
+    
         ColumnModel column01 = new ColumnModel();
         column01.setPhysicalName(COLUMN_PHYSICAL_NAME);
         column01.setLogicalName(COLUMN_LOGICAL_NAME);
@@ -47,6 +48,7 @@ public class SchemaModelTest {
         column01.setNullable(COLUMN_IS_NULLABLE);
         column01.setQuote(COLUMN_QUOTE);
         columnList.add(column01);
+        System.out.println(column01.toJson());
     }
     
     @Test

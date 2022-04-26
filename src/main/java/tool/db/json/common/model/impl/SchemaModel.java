@@ -16,10 +16,6 @@ import com.fasterxml.jackson.core.JsonProcessingException;
  * スキーマ名/DB名を扱う。
  */
 @Data
-@JsonIgnoreProperties({
-    "schema", 
-    "tables"
-})
 @JsonTypeInfo(use=JsonTypeInfo.Id.NONE)
 public class SchemaModel extends AbstractModel {
     /** スキーマ/DB名 */
